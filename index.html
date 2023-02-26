@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <title>Frontend Mentor | Results summary component</title>
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+
+  <div class=" h-screen w-screen flex justify-center items-center ">
+
+    <div class="card sm:h-[450px]  sm:w-[640px] shadow-lg shadow-stone-200 rounded-2xl sm:flex  h-[900px] w-[320px] ">
+
+      <div class="cardleft  sm:h-full h-2/4 sm:w-2/4 w-full bg-gradient-to-t from-blue-800 to-blue-600 rounded-2xl text-center p-5  ">
+        <p class="text-white text-xs">Your Result</p>
+        <div class="round h-[180px] w-[180px] rounded-full bg-gradient-to-t from-blue-700 to-blue-800 mx-auto mt-6 flex justify-center items-center ">
+
+          <div class="text">
+            <p class="text-4xl font-bold text-white" >76</p>
+            <p class="text-xs text-gray-400">of 100</p>
+          </div>
+        </div>
+        <p class="text-white text-base mt-1">Great</p>
+        <p class="text-[17px] text-white">You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+
+      <div class="cardRight p-5 h-full sm:w-2/4 w-full  ">
+        
+        <p class="font-bold text-sm mb-3">Summary</p>
+
+        <div class="minicard h-[55px] w-full  rounded-md bg-[#FFF3F3] mt-2 flex text-xs justify-between items-center">
+          <div class="img flex">
+            <img class="h-4 w-4 ml-2 mr-1" src="assets/images/icon-reaction.svg" alt="">
+            <p class=" text-red-500 font-bold text-[18px] ">Reaction</p>
+          </div>
+          <div class="texts flex ">
+            <p class="mr-2">80 / 100</p>
+          </div>
+        </div>
+
+        <div class="minicard h-[55px] w-full  rounded-md bg-[#FFFCE8] mt-2 flex text-xs justify-between items-center">
+          <div class="img flex">
+            <img class="h-4 w-4 ml-2 mr-1" src="assets/images/icon-memory.svg" alt="">
+            <p class=" text-yellow-500 font-bold text-[18px] ">Memory</p>
+          </div>
+          <div class="texts flex ">
+            <p class="mr-2">92 / 100</p>
+          </div>
+        </div>
+
+        <div class="minicard h-[55px] w-full  rounded-md bg-[#F1FFF1] mt-2 flex text-xs justify-between items-center">
+          <div class="img flex">
+            <img class="h-4 w-4 ml-2 mr-1" src="assets/images/icon-verbal.svg" alt="">
+            <p class=" text-green-500 font-bold text-[18px] ">Verbal</p>
+          </div>
+          <div class="texts flex ">
+            <p class="mr-2">61 / 100</p>
+          </div>
+        </div>
+
+        <div class="minicard h-[55px] w-full  rounded-md bg-[#F5EDFF] mt-2 flex text-xs justify-between items-center">
+          <div class="img flex">
+            <img class="h-4 w-4 ml-2 mr-1" src="assets/images/icon-visual.svg" alt="">
+            <p class=" text-purple-500 font-bold text-[18px] ">Visual</p>
+          </div>
+          <div class="texts flex ">
+            <p class="mr-2">72 / 100</p>
+          </div>
+        </div>
+
+        <div class="button  h-[55px] w-full border-2 rounded-2xl bg-slate-800 text-white text-[16px] font-bold  mt-4 text-center flex justify-center items-center">Continue</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
